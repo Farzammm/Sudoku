@@ -1,0 +1,125 @@
+body {
+    background-color: #044F67;
+    direction: rtl;
+    text-align: right;
+}
+
+h1 {
+    color: #ecdfdf;
+    margin-top: 5px;
+    font-size: 50px;
+}
+
+p {
+    color: #044F67;
+    font-weight: bold
+}
+
+#errors {
+    color: #ff0000;
+}
+
+#board {
+    width: 432px;
+    height: 454px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 30px #0a244e;
+    direction: ltr;
+}
+
+#digits {
+    width: 432px;
+    height: 50px;
+    margin: 10px auto;
+    padding-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    direction: ltr;
+    border-top: 3px solid #cfcfcf;
+}
+
+.tile {
+    width: 48px;
+    height: 48px;
+    border: .5px solid #1F4788;
+    /* text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    width: 44px;
+    height: 44px;
+    margin: 2px;
+    border: 1px solid #89C4F4;
+    color: #cfcfcf;
+    /* text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-selected {
+    background-color: #6db7f3;
+    color: #000;
+}
+
+.tile-start {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.horizontal-line {
+    border-bottom: 3px solid #1F4788;
+}
+
+.vertical-line {
+    border-right: 3px solid #1F4788;
+}
+
+.bgcolor {
+    background-color: #89C4F4;
+}
+
+.help {
+    background-color: #6db7f3;
+    border-radius: 10px;
+}
+
+#win {
+    font-size: 50px;
+    text-shadow: 0px 0px 7px #000;
+}
+
+#lose {
+    font-size: 50px;
+    text-shadow: 0px 0px 7px #000;
+}
+
+#start {
+    background-color: #044F67;
+    color: #ffb700;
+    border: 3px currentColor #ffb700;
+    border-radius: 3px;
+    padding: 6px;
+    font-size: 20px;
+}
+
+#start:hover , #start:focus {
+    background-color: #ffb700;
+    color: #044F67;
+    border: 3px currentColor transparent;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+p span {
+    color: #8a0000;
+}

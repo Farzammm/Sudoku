@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./logo.png">
+    <title>ســودوکــو</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mt-3">
+                <h1>بازی سودوکو</h1>
+                <div class="help mt-5 p-3">
+                    <h3>راهنمای بازی</h3>
+                    <p>
+                        1- برای شروع بازی اعداد زیر جدول را انتخاب کرده و بعد از فعال شدن آن را در جدول اصلی سودوکو با کلیک کردن قرار دهید.
+                    </p>
+                    <p>
+                        2- هر بار قرار دادن عدد اشتباه در خانه های جدول یک خطا محاسبه می شود. <span>(فقط 10 بار فرصت خطا دارید)</span>
+                    </p>
+                    <p>
+                        3-با زدن دکمه تایم زمان برای شما محاسبه میشود
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                    <div id="board" class="mt-5"></div>
+                <div id="digits"></div>
+            </div>
+
+            <div class="col-md-3">
+                <button type="button" id="start" class="w-75 mt-5">شروع تایم</button>
+                <h2 id="time" class="mt-3 text-white"></h2>
+                <h3 id="errors" class="mt-3"></h3>
+                <h2 id="win" class="mt-3 text-success"></h2>
+                <h2 id="lose" class="mt-3 text-danger"></h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
