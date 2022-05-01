@@ -9,7 +9,7 @@ var hours = 0;
 var won;
 var errors = 0;
 document.getElementById("errors").innerText = "تعداد خطا : " + errors;
-document.getElementById("start").addEventListener('click' , startGame);
+document.getElementById("start").addEventListener('click' , startTime);
 
 
 window.onload = function() {
@@ -30,7 +30,7 @@ var board = [
 
 var solution= [
     "953428716",
-    "241679853",
+    "241679835",
     "786351942",
     "835196427",
     "194732568",
@@ -40,8 +40,7 @@ var solution= [
     "517963284"
 ]
 
-function startGame(){
-    errors = 0
+function startTime(){
     seconds = 0;
     minutes = 0;
     hours = 0;
